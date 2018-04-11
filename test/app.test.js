@@ -27,4 +27,12 @@ describe('HTTP App Tests', () => {
             .then(res => {assert.ok(/HTTP/.test((JSON.stringify(res.body))));
             });
     });
+
+    it('Ensures proper 404 functionality', () => {
+        return chai.request(app)
+            .get('/bad')
+            .then((res) => {
+                assert.equal(res.status, 404);
+            });
+    });
 });
