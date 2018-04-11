@@ -17,7 +17,7 @@ this will make it easier to test the fact.)
 3. **BONUS** Add more routes! Consider:
     1. Path (url)
     1. Query
-+    1. Method (use body parser from class if you want to POST/PUT)
+    1. Method (use body parser from class if you want to POST/PUT)
 4. Any other request that doesn't match a defined `METHOD` and url `path` should return status code 404 Not Found 
 and include the text: `CANNOT <METHOD> <path>`
 
